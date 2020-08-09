@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+# coding=utf-8
+import socket,struct,time,os,sys
+from getpass import getpass
+
+def slowprint(s):
+    for c in s + '\n':
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.1 / 100)
+
+logo = """
+\x1b[1;34m        ▓██      ▒█████    ▄████  ██▓ ███▄    █▓
+        ▓██▒    ▒██▒  ██▒ ██▒ ▀█▒▓██▒ ██ ▀█   █▓
+        ▒██░    ▒██░  ██▒▒██░▄▄▄░▒██▒▓██  ▀█ ██▒
+        ▒██░    ▒██   ██░░▓█  ██▓░██░▓██▒  ▐▌██▒
+        ░██████▒░ ████▓▒░░▒▓███▀▒░██░▒██░   ▓██░
+        ░ ▒░▓  ░░ ▒░▒░▒░  ░▒   ▒ ░▓  ░ ▒░   ▒ ▒
+        ░ ░\x1b[00m\033[041m T E R M U X  L O G I N  U S E R BY ANKER  \033[00m\x1b[1;35m░░
+          ░ ░   ░   ░    ░ ░   ░    ░   ░   ░\x1b[00m
+"""
+

@@ -1,0 +1,57 @@
+
+def main():
+      while True:
+           os.system("clear")
+           print('')
+           print('')
+           print('')
+           print('')
+           print('')
+           print('')
+           print('')
+           print('')
+           print('')
+           print('')
+           print('')
+           print('')
+           print('')
+           print('')
+           print('')
+           print('')
+           slowprint(logo)
+           try:
+                x = raw_input('\x1b[00m                   root@4nker~USERNAME :\x1b[33m ')
+                e  = getpass('\x1b[00m                        PASSWORD :\x1b[33m ')
+                print ("")
+                if x==usr and e==pwd:
+                   os.system('clear')
+                   slowprint(logo2)
+                   os.system("sleep 2;cd;clear")
+                   print("")
+                   break
+                else:
+                      print("")
+                      print("")
+                      print("")
+                      print("")
+                      print("\x1b[91m			Access Denied !")
+                      time.sleep(2)
+                      print("")
+           except Exception:
+                      
+                      print("")
+                      print("")
+                      print("")
+                      print("")
+                      print("")
+                      print("\x1b[91m			Access Denied !")
+                      time.sleep(2)
+           except KeyboardInterrupt:
+                      print("")
+                      print("")
+                      print("")
+                      print("")
+                      print("")
+                      os.system('killall -9 com.termux')
+
+main()
